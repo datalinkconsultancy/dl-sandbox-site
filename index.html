@@ -20,5 +20,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>This is where we master GA4 and GTM. Scroll down to test Enhanced Measurement.</p>
     <button id="test-button">Click Me</button>
     <div style="height: 150vh; background-color: #f0f0f0;"></div>
+<script>
+  document.getElementById('test-button').addEventListener('click', function() {
+    window.dataLayer.push({
+      event: 'button_click_main',
+      button_text: 'Click Me'
+    });
+  });
+</script>
 </body>
 </html>
